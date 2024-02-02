@@ -12,10 +12,10 @@ describe('Character class', () => {
             defence: 25,
         });
     });
-    test('correct error', () => {
+    test('correct error of name', () => {
         expect(() => new Character('A', 'Bowman')).toThrow('Invaled name');
     });
-    test('correct error', () => {
+    test('correct error of type', () => {
         expect(() => new Character('Legolas', 'Assasin')).toThrow('Invalid character type');
     })
 });

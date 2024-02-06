@@ -1,15 +1,15 @@
-import Character from "../app";
+import Character from "../class/Character";
 
 describe('Character class', () => {
     test('correct of characters', () => {
-        const Legolas = new Character('Legolas', 'Bowman');
-        expect(Legolas).toEqual({
-            name: 'Legolas',
-            type: 'Bowman',
+        const def = new Character('Gladiator', 'Swordsman');
+        expect(def).toEqual({
+            name: 'Gladiator',
+            type: 'Swordsman',
             health: 100,
             level: 1,
-            attack: 25,
-            defence: 25,
+            attack: undefined,
+            defence: undefined,
         });
     });
     test('correct error of name', () => {
